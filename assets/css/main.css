@@ -3217,6 +3217,13 @@ input, select, textarea {
 
 /* Wrapper */
 
+	.profile-pic img {
+		width: 200px; /* Original desktop size */
+		height: 210px; /* Original desktop size */
+		border-radius: 50%;
+	}
+
+
 	.wrapper {
 		position: relative;
 	}
@@ -3246,10 +3253,20 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					padding: 3em 2em 1em 2em ;
+					/* padding: 3em 2em 1em 2em; */
+					width: 100%;
 				}
-
+			
+				.profile-pic img {
+					width: 100px; /* Adjust for mobile */
+					height: auto; /* Maintain aspect ratio */
+					/* Other mobile-specific styles */
+				}
 			}
+			
+			
+
+
 
 		.wrapper.alt {
 			background-color: #E97451;
