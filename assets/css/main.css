@@ -3256,10 +3256,11 @@ input, select, textarea {
 				.profile-pic img {
 					width: 50px; /* Adjust for mobile */
 					height: 50px; /* Make it a perfect square */
-					border-radius: 50%; /* Circular shape */
+					border-radius: 0%; /* Circular shape */
 					object-fit: cover; /* Ensures the image covers the area without stretching */
 					position: absolute; /* Positioning relative to its nearest positioned ancestor */
-					top: 0.5em; /* Distance from the top */
+					top: 0.3em; /* Distance from the top */
+					bottom: 0.5em;
 					left: 4em; /* Distance from the left */
 					/* Other mobile-specific styles */
 				}
@@ -3276,10 +3277,11 @@ input, select, textarea {
 				.profile-pic img {
 					width: 50px; /* Adjust for mobile */
 					height: 50px; /* Make it a perfect square */
-					border-radius: 50%; /* Circular shape */
+					border-radius: 0%; /* Circular shape */
 					object-fit: cover; /* Ensures the image covers the area without stretching */
 					position: absolute; /* Positioning relative to its nearest positioned ancestor */
-					top: 0.5em; /* Distance from the top */
+					top: 0.3em; /* Distance from the top */
+					bottom: 0.5em;
 					left: 4em; /* Distance from the left */
 					/* Other mobile-specific styles */
 				}
