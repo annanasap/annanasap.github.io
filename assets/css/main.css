@@ -3145,6 +3145,11 @@ input, select, textarea {
 				padding: 3em 2em 1em 2em ;
 			}
 
+			.spotlights > section > .content > .inner {
+				padding-top: 30px;
+			}
+
+
 		}
 
 /* Table */
@@ -3248,18 +3253,34 @@ input, select, textarea {
 					width: 100%;
 				}
 
+				.profile-pic img {
+					width: 50px; /* Adjust for mobile */
+					height: 50px; /* Make it a perfect square */
+					border-radius: 50%; /* Circular shape */
+					object-fit: cover; /* Ensures the image covers the area without stretching */
+					position: absolute; /* Positioning relative to its nearest positioned ancestor */
+					top: 0.5em; /* Distance from the top */
+					left: 4em; /* Distance from the left */
+					/* Other mobile-specific styles */
+				}
+
 			}
 
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
-					/* padding: 3em 2em 1em 2em; */
+					padding: 3em 2em 1em 2em;
 					width: 100%;
 				}
 			
 				.profile-pic img {
-					width: 100px; /* Adjust for mobile */
-					height: auto; /* Maintain aspect ratio */
+					width: 50px; /* Adjust for mobile */
+					height: 50px; /* Make it a perfect square */
+					border-radius: 50%; /* Circular shape */
+					object-fit: cover; /* Ensures the image covers the area without stretching */
+					position: absolute; /* Positioning relative to its nearest positioned ancestor */
+					top: 0.5em; /* Distance from the top */
+					left: 4em; /* Distance from the left */
 					/* Other mobile-specific styles */
 				}
 			}
@@ -3269,19 +3290,19 @@ input, select, textarea {
 
 
 		.wrapper.alt {
-			background-color: #E97451;
+			background-color: #AFA8BA;
 		}
 
 		.wrapper.style1 {
-			background-color: #A8A8A8;
+			background-color: #9989B4;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #A8A8A8;
+			background-color: #9989B4;
 		}
 
 		.wrapper.style2 {
-			background-color: #AD6A6C;
+			background-color: #BEA6A1;
 		}
 
 		.wrapper.style2-alt {
@@ -3289,7 +3310,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #BAA892;
+			background-color: #9989B4;
 		}
 
 		.wrapper.style3-alt {
@@ -3331,7 +3352,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper.fullscreen {
-					padding: 2em 0;
+					padding: 2em 2em;
 					min-height: 0;
 				}
 
@@ -3898,7 +3919,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#sidebar {
-				display: none;
+				display: inline;
 			}
 
 		}
